@@ -1,3 +1,4 @@
+import ipdb
 import asyncio
 import json
 import os
@@ -500,6 +501,7 @@ if __name__ == '__main__':
     logger.info(f'Loaded dataset {args.dataset} with split {args.split}')
     swe_bench_tests = filter_dataset(dataset.to_pandas(), 'instance_id')
 
+    #ipdb.set_trace()
     llm_config = None
     if args.llm_config:
         llm_config = get_llm_config_arg(args.llm_config)
