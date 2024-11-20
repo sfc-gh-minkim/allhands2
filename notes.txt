@@ -1,0 +1,1 @@
+./evaluation/swe_bench/scripts/run_infer.sh llm HEAD CodeActAgent 300 30 1 princeton-nlp/SWE-bench_Lite test
