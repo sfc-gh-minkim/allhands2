@@ -217,6 +217,8 @@ class LLM(RetryMixin, DebugMixin):
                     }
 
             try:
+                # import ipdb
+                # ipdb.set_trace()
                 # we don't support streaming here, thus we get a ModelResponse
                 resp: ModelResponse = self._completion_unwrapped(*args, **kwargs)
 

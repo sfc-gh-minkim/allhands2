@@ -481,6 +481,9 @@ class AgentController:
 
         self.update_state_before_step()
         action: Action = NullAction()
+
+        # import ipdb
+        # ipdb.set_trace()
         try:
             action = self.agent.step(self.state)
             if action is None:

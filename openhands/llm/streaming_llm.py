@@ -64,6 +64,8 @@ class StreamingLLM(AsyncLLM):
             self.log_prompt(messages)
 
             try:
+                # import ipdb
+                # ipdb.set_trace()
                 # Directly call and await litellm_acompletion
                 resp = await async_streaming_completion_unwrapped(*args, **kwargs)
 
